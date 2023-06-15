@@ -1,0 +1,45 @@
+#!/usr/bin/bash
+#  ╔═╗╔═╗╔═╗╔═╗  ╦  ╔═╗╦ ╦╔╗╔╔═╗╦ ╦╔═╗╦═╗
+#  ╠═╣╠═╝╠═╝╚═╗  ║  ╠═╣║ ║║║║║  ╠═╣║╣ ╠╦╝
+#  ╩ ╩╩  ╩  ╚═╝  ╩═╝╩ ╩╚═╝╝╚╝╚═╝╩ ╩╚═╝╩╚═
+
+# From here you can control your favorite applications for all themes.
+
+case "$1" in
+  --menu)
+    rofi -show drun \
+    -theme $HOME/.config/bspwm/sycasec/launcher.rasi & disown;;
+  --rice)
+	RiceSelector & disown;;
+  --terminal)
+    alacritty & disown;;
+  --floating)
+    alacritty --class FloaTerm,Alacritty & disown;;
+  --pseudo-tiled-term)
+    alacritty --class PsTiled,Alacritty & disown;;
+  --update)
+    alacritty --hold --class FloaTerm,Alacritty -e Updates --update-system & disown;;
+  --checkupdates)
+	alacritty --hold --class Updating,Alacritty -e Updates --print-updates & disown;;
+  --ranger)
+    alacritty --class Ranger,Alacritty -e ranger & disown;;
+  --nvim)
+    alacritty -e nvim & disown;;
+  --music)
+    alacritty --class MusicPlayer,Alacritty -e spotify & disown;;
+  --fetch)
+    alacritty --hold --class Sysfetch,Alacritty -e ~/.local/bin/sysfetch & disown;;
+  #Apps
+  --filemanager)
+  thunar & disown;;
+  --notes)
+  obsidian & disown;;
+  --browser)
+	firefox & disown;;
+  --editor)
+	geany & disown;;
+  --soundcontrol)
+    pavucontrol & disown;;
+  *)
+    echo "invalid option";;
+esac
