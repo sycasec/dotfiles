@@ -19,7 +19,17 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "c_sharp",
       })
+    end,
+  },
+
+  {
+    "williamboman/mason.nvim",
+    opts = function(_, opts)
+      if type(opts.ensure_installed) == "table" then
+        vim.list_extend(opts.ensure_installed, { "csharp-language-server", "csharpier" })
+      end
     end,
   },
 
@@ -33,6 +43,37 @@ return {
       ---@type lspconfig.options
       servers = {
         pylsp = {},
+      },
+    },
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
+    opts = {
+      set = {
+        csharp_ls = {},
+      },
+      ---@type lspconfig.options
+      servers = {
+        csharp_ls = {},
+      },
+    },
+  },
+
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+  },
+
+  {
+    "jay-babu/mason-null-ls.nvim",
+    opts = {
+      setup = {
+        ensure_installed = {
+          "prettier",
+          "black",
+          "csharpier",
+        },
       },
     },
   },

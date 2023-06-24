@@ -7,6 +7,8 @@ return {
   { "rose-pine/neovim" },
   { "ray-x/starry.nvim" },
   { "tiagovla/tokyodark.nvim" },
+  { "folke/tokyonight.nvim" },
+  { "liuchengxu/space-vim-dark" },
 
   -- Configure LazyVim to load gruvbox
   {
