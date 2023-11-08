@@ -1,0 +1,87 @@
+#!/usr/bin/bash
+
+PATH="$HOME/.config/scripts:$PATH"
+PATH="$HOME/.config/polybar/scripts:$PATH"
+
+## fix java applications
+export _JAVA_AWT_WM_NONREPARENTING=1
+export WALLPAPER_DIR="$HOME/Downloads/walls/"
+
+connected_displays=($(xrandr -q | grep "connected" | awk '!/disconnected/' | awk '{print $1}'))
+
+INTERNAL_MONITOR="eDP-1"
+EXTERNAL_MONITOR=${connected_displays[1]}
+
+export INTERNAL_MONITOR
+export EXTERNAL_MONITOR
+
+
+if [[ -n $EXTERNAL_MONITOR ]]; then
+	xrandr --output $INTERNAL_MONITOR --mode 1920x1080 --rotate normal --rate 144.00 --output $EXTERNAL_MONITOR --mode 1920x1080 --rotate normal --rate 144.00 --primary --right-of $INTERNAL_MONITOR &
+  bspc monitor $INTERNAL_MONITOR -d '1' '2' '3' '4' '5' '6' '7' 
+	bspc monitor $EXTERNAL_MONITOR -d '8' '9' '10' '11' '12'
+else
+  bspc monitor $INTERNAL_MONITOR -d '1' '2' '3' '4' '5' '6' '7'
+fi
+
+
+
+#bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' ''
+##bspc monitor "$monitor" -d '' '' '' '' '' ''
+
+
+#  ╔╗ ╔═╗╔═╗╦ ╦╔╦╗  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗
+#  ╠╩╗╚═╗╠═╝║║║║║║  ║  ║ ║║║║╠╣ ║║ ╦
+#  ╚═╝╚═╝╩  ╚╩╝╩ ╩  ╚═╝╚═╝╝╚╝╚  ╩╚═╝
+#
+bspc config external_rules_command $HOME/.config/scripts/ExternalRules
+
+bspc config window_gap 8
+bspc config split_ratio 0.51
+bspc config single_monocle true
+bspc config borderless_monocle false
+bspc config gapless_monocle false
+
+bspc config focus_follows_pointer true
+bspc config pointer_follows_focus false
+bspc config pointer_motion_interval 5
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
+
+#  ╔═╗╦ ╦╔╦╗╔═╗╔═╗╔╦╗╔═╗╦═╗╔╦╗
+#  ╠═╣║ ║ ║ ║ ║╚═╗ ║ ╠═╣╠╦╝ ║ 
+#  ╩ ╩╚═╝ ╩ ╚═╝╚═╝ ╩ ╩ ╩╩╚═ ╩
+
+processes=("picom" "polybar" "sxhkd" "dunst")
+
+for process in "${processes[@]}"; do
+	if pidof -q "$process"; then
+		pkill -9 -x "$process" >/dev/null
+		sleep 0.1
+	fi
+done
+
+launch-bars &
+
+picom --config "$HOME"/.config/picom/picom.conf &
+
+# Launch dunst notification daemon
+dunst -config "$HOME"/.config/dunst/dunstrc &
+
+# Reload sxhkd daemon
+sxhkd -c "$HOME"/.config/sxhkd/sxhkdrc &
+
+# figure this out 
+# optimus-manager-qt &
+
+# set wall paper
+feh -z --no-fehbg --bg-fill $WALLPAPER_DIR 
+
+# launch polkit? i stole this part
+pidof -q polkit-kde-authentication-agent-1 || {/usr/lib/polkit-kde-authentication-agent-1 &}
+
+# Fix cursor
+xsetroot -cursor_name left_ptr

@@ -1,0 +1,37 @@
+#!/usr/bin/bash
+#  ╔═╗╔═╗╔═╗╔═╗  ╦  ╔═╗╦ ╦╔╗╔╔═╗╦ ╦╔═╗╦═╗
+#  ╠═╣╠═╝╠═╝╚═╗  ║  ╠═╣║ ║║║║║  ╠═╣║╣ ╠╦╝
+#  ╩ ╩╩  ╩  ╚═╝  ╩═╝╩ ╩╚═╝╝╚╝╚═╝╩ ╩╚═╝╩╚═
+
+
+
+case "$1" in
+  --menu)
+    rofi-menu & disown;;
+  --terminal)
+    alacritty & disown;;
+  --floating)
+    alacritty --class FloaTerm & disown;;
+  --nvim)
+    alacritty -e nvim & disown;;
+  --fetch)
+    alacritty --hold --class Sysfetch,Alacritty -e ~/.local/bin/sysfetch & disown;;
+
+  #Apps
+  --filemanager)
+    thunar --class thunar & disown;;
+  --music)
+    spotify --class spotify & disown;;
+  --notes)
+  obsidian & disown;;
+  --browserf)
+	firefox --class firefox & disown;;
+  --browserb)
+	brave --class brave & disown;;
+  --soundcontrol)
+    pavucontrol & disown;;
+  --emoji)
+    rofi -show emoji & disown;;
+  *)
+    echo "invalid option";;
+esac
