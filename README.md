@@ -1,2 +1,7 @@
 # dotfiles
-these are my dotfiles, I am panic uploading them because I am migrating to a new laptop!
+
+config files for arch setup
+
+|OS|Arch Linux x86_64|
+|Host|NitroAN515-58 V1.11|
+|FS|ext4|
