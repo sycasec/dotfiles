@@ -2,11 +2,13 @@
 
 bluetooth_print() {
     bluetoothctl | grep --line-buffered 'Device\|#' | while read -r REPLY; do
-        if [ "$(systemctl is-active "bluetooth.service")" = "active" ]; then
-            printf '#1'
-
+        # if [ "$(systemctl is-active "bluetooth.service")" = "active" ]; then
+        if [ $(bluetoothctl show | grep "Powered: yes" | wc -c) -eq 0 ]; then
+            echo "%{F#7f849c}"
+        else 
             devices_paired=$(bluetoothctl devices Paired | grep Device | cut -d ' ' -f 2)
             counter=0
+
 
             for device in $devices_paired; do
                 device_info=$(bluetoothctl info "$device")
@@ -17,18 +19,18 @@ bluetooth_print() {
 
                     if [ -n "$device_battery_percent" ]; then
                         if [ "$device_battery_percent" -gt 90 ]; then
-                            device_battery_icon="#25"
+                            device_battery_icon="%{F#a6e3a1}󰁹"
                         elif [ "$device_battery_percent" -gt 60 ]; then
-                            device_battery_icon="#24"
+                            device_battery_icon="%{F#a6e3a1}󰂁"
                         elif [ "$device_battery_percent" -gt 35 ]; then
-                            device_battery_icon="#23"
-                        elif [ "$device_battery_percent" -gt 10 ]; then
-                            device_battery_icon="#22"
+                            device_battery_icon="%{F#f9e2af}󰁿"
+                        elif [ "$device_battery_percent" -gt 15 ]; then
+                            device_battery_icon="%{F#f5c2e7}󰁽"
                         else
-                            device_battery_icon="#21"
+                            device_battery_icon="%{F#f38ba8}󰁻"
                         fi
 
-                        device_output="$device_output $device_battery_icon $device_battery_percent%"
+                        device_output="%{F#74c7ec} %{F#cdd6f4}$device_output $device_battery_icon $device_battery_percent%"
                     fi
 
                     if [ $counter -gt 0 ]; then
@@ -40,10 +42,7 @@ bluetooth_print() {
                     counter=$((counter + 1))
                 fi
             done
-
-            printf '\n'
-        else
-            echo "#2"
+            echo "%{F#74c7ec}"
         fi
     done
 }

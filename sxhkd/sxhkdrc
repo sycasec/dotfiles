@@ -23,18 +23,22 @@ super + @space
 	OpenApps --menu
 
 # Power off, Reboot, Log out, Lockscreen, kill an app
-ctrl + super + alt + p
-  rofi-powermenu
+ctrl + super + alt + {p, e}
+  {rofi-powermenu, rofi -show emoji}
 	# {systemctl poweroff, systemctl reboot,bspc quit,betterlockscreen -l dimblur,xkill}
 
 # Apps
-super + shift + {f,d,p,s,o,e,b}
+super + shift + {f,t,p,s,o,e,r,c,d,m,b,}
 	{OpenApps --browserf, \
 	OpenApps --filemanager, \
-	OpenApps --soundcontrol, \
+  OpenApps --cpick, \
   rofi-screenshot, \
   OpenApps --notes, \
   OpenApps --emoji, \
+  OpenApps --ranger, \
+  OpenApps --calendar, \
+  OpenApps --discord, \
+  OpenApps --music, \
   OpenApps --browserb}
 
 # Hide/Show Bar (Polybar and/or eww)
@@ -93,7 +97,7 @@ super + g
 	bspc node -s biggest
 
 # set the window state
-super + {t,shift + t,f,shift + f}
+super + {t,alt + t,f,alt + f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
@@ -176,7 +180,7 @@ alt + shift {Left,Down,Up,Right}
 
 # Manage brightness
 XF86MonBrightness{Up,Down}
-    sh brightness {up,down}
+	brightness {up,down}
 
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume,Mute}
@@ -185,3 +189,6 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 # Music Control
 XF86Audio{Next,Prev,Play,Stop}
 	MediaControl {--next,--previous,--toggle,--stop}
+
+Print
+	flameshot gui -s -c

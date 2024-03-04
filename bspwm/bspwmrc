@@ -6,6 +6,7 @@ PATH="$HOME/.config/polybar/scripts:$PATH"
 ## fix java applications
 export _JAVA_AWT_WM_NONREPARENTING=1
 export WALLPAPER_DIR="$HOME/Downloads/walls/"
+export GTK_THEME=Sweet-Dark-v40
 
 connected_displays=($(xrandr -q | grep "connected" | awk '!/disconnected/' | awk '{print $1}'))
 
@@ -18,8 +19,8 @@ export EXTERNAL_MONITOR
 
 if [[ -n $EXTERNAL_MONITOR ]]; then
 	xrandr --output $INTERNAL_MONITOR --mode 1920x1080 --rotate normal --rate 144.00 --output $EXTERNAL_MONITOR --mode 1920x1080 --rotate normal --rate 144.00 --primary --right-of $INTERNAL_MONITOR &
-  bspc monitor $INTERNAL_MONITOR -d '1' '2' '3' '4' '5' '6' '7' 
-	bspc monitor $EXTERNAL_MONITOR -d '8' '9' '10' '11' '12'
+  bspc monitor $INTERNAL_MONITOR -d '1' '2' '3' '4' '5' '6' '7' &
+	bspc monitor $EXTERNAL_MONITOR -d '8' '9' '10' 
 else
   bspc monitor $INTERNAL_MONITOR -d '1' '2' '3' '4' '5' '6' '7'
 fi
@@ -35,8 +36,11 @@ fi
 #  ╚═╝╚═╝╩  ╚╩╝╩ ╩  ╚═╝╚═╝╝╚╝╚  ╩╚═╝
 #
 bspc config external_rules_command $HOME/.config/scripts/ExternalRules
+source $HOME/.config/bspwm/rules.conf
 
-bspc config window_gap 8
+export SYSTEMD_TIMEDATED_NTP_SERVICES=chronyd.service:systemd-timesyncd.service
+
+bspc config window_gap 16
 bspc config split_ratio 0.51
 bspc config single_monocle true
 bspc config borderless_monocle false
@@ -76,6 +80,8 @@ sxhkd -c "$HOME"/.config/sxhkd/sxhkdrc &
 
 # figure this out 
 # optimus-manager-qt &
+
+# nm-applet &
 
 # set wall paper
 feh -z --no-fehbg --bg-fill $WALLPAPER_DIR 

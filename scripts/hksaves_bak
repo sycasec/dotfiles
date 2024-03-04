@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+SAVE_DIR="/home/sycasec/.local/share/Steam/steamapps/compatdata/367520/pfx/drive_c/users/steamuser/AppData/LocalLow/Team Cherry/Hollow Knight"
+
+TARGET_DIR="${HOME}/Documents/HKsaves"
+
+if [[ $1 == "save" ]]; then
+  cp -v "$SAVE_DIR"/*.dat ${TARGET_DIR}
+elif [[ $1 == "load" ]]; then 
+  cp -f  ${TARGET_DIR}/*.dat "$SAVE_DIR"/
+else
+  echo "invalid argument: \"save\" and \"load\" only."
+fi
