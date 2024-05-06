@@ -45,6 +45,10 @@ super + shift + {f,t,p,s,o,e,r,c,d,m,b,}
 # super + {h,u}
 # 	HideBar {-h,-u}
 
+# Remove dunst notifications
+super + alt + d
+	dunstctl close-all
+
 # Change transparency on focused window
 ctrl + alt {plus,minus,t}
 	{picom-trans -c -o +3, picom-trans -c -o -1, picom-trans -c -d}
@@ -54,7 +58,7 @@ ctrl + alt {plus,minus,t}
 super + Escape
 	pkill -USR1 -x sxhkd; dunstify -u low -i ~/.config/bspwm/assets/reload.svg 'sxhkd' 'The configuration file has been reloaded successfully!'
 
-#Random wallpaper
+# Random wallpaper
 super + alt + w
   RandomWallpaper
 
@@ -113,7 +117,7 @@ super + alt + {minus, equal}
 	bspc config window_gap $(( $(bspc config window_gap) {-,+} 10 ))
 
 # focus the node in the given direction
-super + {_,shift + }{Left,Down,Up,Right}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
@@ -125,7 +129,7 @@ alt + {_,shift + }Tab
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
-super + alt + {Left,Right}
+super + alt + {h,l}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
@@ -147,7 +151,7 @@ super + {_,shift + }{1-9,0}
 #
 
 # preselect the direction
-super + ctrl + {Left,Down,Up,Right}
+super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
@@ -167,15 +171,15 @@ super + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
+super + alt + {Left,Down,Up,Right}
 	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
+super + alt + shift + {Left,Down,Up,Right}
 	bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
 
 # move a floating window
-alt + shift {Left,Down,Up,Right}
+alt + shift {h,j,k,l}
 	bspc node -v {-10 0,0 10,0 -10,10 0}
 
 # Manage brightness
