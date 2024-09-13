@@ -6,7 +6,8 @@ PATH="$HOME/.config/polybar/scripts:$PATH"
 ## fix java applications
 export _JAVA_AWT_WM_NONREPARENTING=1
 export WALLPAPER_DIR="$HOME/Downloads/walls/"
-export GTK_THEME=Sweet-Dark-v40
+export GTK_THEME=Colloid-Dark-Catppuccin
+
 
 connected_displays=($(xrandr -q | grep "connected" | awk '!/disconnected/' | awk '{print $1}'))
 

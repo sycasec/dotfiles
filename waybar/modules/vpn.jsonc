@@ -1,0 +1,9 @@
+ "custom/vpn": {
+       "interval": 3,
+       "format": "{}",
+       "exec": "ip add show | grep -qF tun0 && echo 🔒 Connected || echo 🔓 Disconnected",
+       "max-length": "100",
+       "on-click": "nmcli connection up insertovpnfilenamewithoutextension",
+       "on-click-right": "nmcli connection down insertovpnfilenamewithoutextension"
+    },
+.....
