@@ -2,10 +2,14 @@
 
 config files for arch setup
 
-<img src="./screenshot-desktop.png" width="100%"/> 
+## hyprland 2 monitors
 
-|sysinfo||
-|---|---|
-|OS|Arch Linux x86_64|
-|Host|NitroAN515-58 V1.11|
-|FS|ext4|
+<img src="./desktop_wide2.png" width="100%"/>
+
+## hyprland Single monitor
+
+<img src="./desktop_single.png" width="100%"/>
+
+## bspwm
+
+<img src="./screenshot-desktop.png" width="100%"/>

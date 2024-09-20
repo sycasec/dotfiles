@@ -3,45 +3,58 @@
 #  ╠═╣╠═╝╠═╝╚═╗  ║  ╠═╣║ ║║║║║  ╠═╣║╣ ╠╦╝
 #  ╩ ╩╩  ╩  ╚═╝  ╩═╝╩ ╩╚═╝╝╚╝╚═╝╩ ╩╚═╝╩╚═
 
-
-
 case "$1" in
-  --menu)
-    rofi-menu;;
-  --terminal)
-    alacritty;;
-  --floating)
-    alacritty --class FloaTerm;;
-  --nvim)
-    alacritty -e nvim;;
-  --fetch)
-    alacritty --hold --class Sysfetch,Alacritty -e ~/.local/bin/sysfetch;;
-  --ranger)
-    alacritty --class FloaTerm,Alacritty -o window.dimensions.lines=44 window.dimensions.columns=120 -e ranger
-		;;
+--menu)
+  rofi-menu
+  ;;
+--terminal)
+  wezterm
+  ;;
+--floating)
+  wezterm --class FloaTerm
+  ;;
+--nvim)
+  wezterm -e nvim
+  ;;
+--fetch)
+  wezterm --hold --class Sysfetch,wezterm -e ~/.local/bin/sysfetch
+  ;;
+--ranger)
+  wezterm --class FloaTerm -o window.dimensions.lines=44 window.dimensions.columns=120 -e ranger
+  ;;
 
-
-  #Apps
-  --calendar) 
-    alacritty --class FloaTerm,Alacritty -o window.dimensions.lines=44 window.dimensions.columns=120 -e calcurse ;;
-  --filemanager)
-    thunar --class thunar;;
-  --music)
-    spotify --class p-spotify;;
-  --notes)
-  obsidian;;
-  --browserf)
-	firefox --class firefox;;
-  --browserb)
-	brave --class brave;;
-  --soundcontrol)
-    pavucontrol --class pavucontrol;;
-  --discord)
-    discord --class discord;;
-  --emoji)
-    rofi -show emoji;;
-  --cpick)
-    gcolor3 --class colorpick;;
-  *)
-    echo "invalid option";;
+#Apps
+--calendar)
+  hyprctl dispatch exec wezterm -e calcurse setprop class:calendar
+  ;;
+--filemanager)
+  thunar --class thunar
+  ;;
+--music)
+  spotify class p-spotify
+  ;;
+--notes)
+  obsidian
+  ;;
+--browserf)
+  firefox --class firefox
+  ;;
+--browserb)
+  brave --class brave
+  ;;
+--soundcontrol)
+  pavucontrol --class pavucontrol
+  ;;
+--discord)
+  discord --class discord
+  ;;
+--emoji)
+  rofi -show emoji
+  ;;
+--cpick)
+  gcolor3 --class colorpick
+  ;;
+*)
+  echo "invalid option"
+  ;;
 esac

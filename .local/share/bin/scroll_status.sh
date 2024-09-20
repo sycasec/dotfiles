@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Run zscroll with Spotify status and scroll it when playing
-zscroll -l 30 \
+zscroll -l 20 \
   --delay 0.15 \
   --scroll-padding "  " \
   --match-command "get_status.sh" \

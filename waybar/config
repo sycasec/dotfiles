@@ -30,7 +30,7 @@
         "on-click-middle": "playerctl previous --player spotify",
         // "on-scroll-up": "volumecontrol.sh -p spotify i",
         // "on-scroll-down": "volumecontrol.sh -p spotify d",
-        "max-length": 25,
+        "max-length": 20,
         "escape": true
     },
     // "custom/media": {
