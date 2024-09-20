@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+for file in ./*.webp; do [ -f "$file" ] && dwebp "$file" -o "${file%.webp}.png" && rm "$file"; done

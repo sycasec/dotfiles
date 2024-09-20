@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# settings for common commands
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -vI"
+alias bc="bc -ql"
+alias mkd="mkdir -pv"
+alias lsdl="lsd -lah"
+alias locate="plocate"
+alias tp="trash-put"
+alias tpr="trash-restore"
+alias grep='grep --color=always'
+
+# apps
+alias v="nvim"
+alias nv="nvim"
+alias pac="sudo pacman"
+alias xcc="xclip -selection clipboard"
+alias xcv="xclip -o -selection clipboard"
+
+# git
+alias g="git"
+alias gstat="git status"
+alias gcom="git commit"
+alias gpsh="git push"
+alias gpll="git pull"
+alias ga="git add"
+alias gcl="git clone"
