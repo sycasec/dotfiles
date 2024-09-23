@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "e76acd00076bf0db",
+    "type": "split",
+    "children": [
+      {
+        "id": "095b9e0f44048c20",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "CMSC 192 D/week5lecture.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b523a3fc193eb4a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5e6a0eb4b8ee90a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d3bd9e09c882955",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0e9efd0fb4d6f5c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1176ea7eca252742",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "a225c18cac8df20f",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 223.00435638427734
+  },
+  "right": {
+    "id": "362628d18b5136e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1194631bb68011d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c00347e1159ac09c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CMSC 192 D/week5lecture.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "29090c75235906f6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CMSC 192 D/week5lecture.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "84e0d1dac5956f5c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "712b3c8c19a878e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CMSC 192 D/week5lecture.md"
+              }
+            }
+          },
+          {
+            "id": "357934abd3ffa586",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "79c3a57c1477da0c",
+            "type": "leaf",
+            "state": {
+              "type": "FANTASY_CALENDAR",
+              "state": {}
+            }
+          },
+          {
+            "id": "e5b3ffc8478f9b25",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "095b9e0f44048c20",
+  "lastOpenFiles": [
+    "CMSC 192 D/Natural Law Ethics.md",
+    "CMSC 192 D/week5lecture.md",
+    "CMSC 192 D/week5act.md",
+    "lit4/meet_5_notes.md",
+    "lit4/meet_2_notes.md",
+    "CMSC_128/week_II.md",
+    "lit4/act1_answers.md",
+    "lit4/cebuano_poetry_essay.md",
+    "lit4/meet_1_notes.md",
+    "STS/TechnoCulture.md"
+  ]
+}

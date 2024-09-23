@@ -1,0 +1,262 @@
+{
+  "main": {
+    "id": "e76acd00076bf0db",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cef640148bdc7fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31fa867e092005e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Rough Notes/Growth portal.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b523a3fc193eb4a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5e6a0eb4b8ee90a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d3bd9e09c882955",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse"
+              }
+            }
+          },
+          {
+            "id": "0e9efd0fb4d6f5c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1176ea7eca252742",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "00c698b2a36e2929",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "104515407a8d345f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 299.5026054382324
+  },
+  "right": {
+    "id": "362628d18b5136e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1194631bb68011d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84e0d1dac5956f5c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0cb217fa366dd759",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1 - Rough Notes/Growth portal.md"
+              }
+            }
+          },
+          {
+            "id": "1a24a7a8ff12877f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "6e254a85e76f0698",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1 - Rough Notes/Growth portal.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "559e609cdf1ce076",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1 - Rough Notes/Growth portal.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1c1e2eb423eaf56e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "a90ae99215fa708b",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "487a7a95df0b7f9e",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "1 - Rough Notes/Growth portal.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 429,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "daily-notes:Open today's daily note": false,
+      "vim-toggle:Toggle Vim Mode": false
+    }
+  },
+  "active": "31fa867e092005e8",
+  "lastOpenFiles": [
+    "1 - Rough Notes/Growth Portal Project Plan.md",
+    "8 - Daily Log/Mon@2024-09-23.md",
+    "1 - Rough Notes/Growth portal.md",
+    "1 - Rough Notes/Sir Nax Welcome.md",
+    "8 - Daily Log/Tue@2024-09-17.md",
+    "8 - Daily Log/Sat@2024-09-14.md",
+    "Excalidraw/Drawing 2024-09-14 20.24.22.excalidraw.md",
+    "Excalidraw",
+    "2 - Source Material/Videos/Youtube/Tailwind/tailwind classes.md",
+    "2 - Source Material/Videos/PluralSight/C#/Repository Pattern.md",
+    "2 - Source Material/Videos/PluralSight/C#/Data Access.md",
+    "2 - Source Material/Videos/PluralSight/Design Patterns/Structural Patterns.md",
+    "2 - Source Material/Videos/PluralSight/Design Patterns/Builder Pattern.md",
+    "8 - Daily Log/Tue@2024-09-10.md",
+    "8 - Daily Log/Sat@2024-09-7.md",
+    "2 - Source Material/Videos/PluralSight/C#/LINQ.md",
+    "8 - Daily Log/Fri@2024-09-6.md",
+    "8 - Daily Log/Wed@2024-09-4.md",
+    "8 - Daily Log/Mon@2024-09-2.md",
+    "8 - Daily Log/Fri@2024-08-30.md",
+    "8 - Daily Log/Mon@2024-08-26.md",
+    "8 - Daily Log/Thu@2024-08-22.md",
+    "8 - Daily Log/Tue@2024-08-20.md",
+    "8 - Daily Log/Sun@2024-08-18.md",
+    "8 - Daily Log/Tue@2024-08-13.md",
+    "8 - Daily Log/Sun@2024-08-11.md",
+    "8 - Daily Log/August 2024/Mon@2024-08-12.md",
+    "2 - Source Material/Videos/PluralSight/Wireshark",
+    "2 - Source Material/Videos/Youtube/Tailwind",
+    "2 - Source Material/Videos/Youtube",
+    "2 - Source Material/Videos/PluralSight/C#",
+    "8 - Daily Log/August 2024",
+    "2 - Source Material/Videos/PluralSight/Docker",
+    "2 - Source Material/Other/Untitled",
+    "7 - pastes/Pasted image 20240802214426.png",
+    "7 - pastes/Pasted image 20240802213900.png",
+    "7 - pastes/Pasted image 20240802213858.png",
+    "7 - pastes/Pasted image 20240802150820.png",
+    "2 - Source Material/Videos/PluralSight/React/Untitled",
+    "2 - Source Material/Videos/PluralSight/Design Patterns",
+    "7 - pastes/Pasted image 20240802002049.png",
+    "7 - pastes/Pasted image 20240801203318.png",
+    "7 - pastes/Pasted image 20240726223226.png",
+    "7 - pastes/Pasted image 20240726220055.png",
+    "7 - pastes/Pasted image 20240726215244.png",
+    "7 - pastes/Pasted image 20240726170658.png",
+    "QuickNotes/Untitled.canvas",
+    "uni/CMSC134/Untitled.canvas",
+    "school/CMSC134/Untitled.canvas",
+    "CMSC134/Untitled.canvas",
+    "ICDL/Beeg_data.canvas",
+    "Untitled.canvas"
+  ]
+}

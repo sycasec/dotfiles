@@ -1,0 +1,19 @@
+{
+  "pdfExportSettings": {
+    "pageSize": "Legal",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 90
+  },
+  "readableLineLength": false,
+  "vimMode": true,
+  "showLineNumber": true,
+  "spellcheck": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": false,
+  "attachmentFolderPath": "7 - pastes",
+  "newFileLocation": "folder",
+  "propertiesInDocument": "source",
+  "newFileFolderPath": "6 - Main Notes"
+}

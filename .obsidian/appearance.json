@@ -1,0 +1,15 @@
+{
+  "baseFontSize": 14,
+  "translucency": true,
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "",
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "snippet",
+    "extended-colorschemes"
+  ],
+  "accentColor": "#47f59e",
+  "baseFontSizeAction": true,
+  "theme": "obsidian",
+  "monospaceFontFamily": "Hack NF"
+}

@@ -1,0 +1,121 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "VaultRoot",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "DailyLog",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "cmsc 124",
+      "color": {
+        "a": 1,
+        "rgb": 15254653
+      }
+    },
+    {
+      "query": "cmsc 192",
+      "color": {
+        "a": 1,
+        "rgb": 544893
+      }
+    },
+    {
+      "query": "Ethics",
+      "color": {
+        "a": 1,
+        "rgb": 544893
+      }
+    },
+    {
+      "query": "ScienceTech",
+      "color": {
+        "a": 1,
+        "rgb": 166400
+      }
+    },
+    {
+      "query": "cmsc 194",
+      "color": {
+        "a": 1,
+        "rgb": 4718588
+      }
+    },
+    {
+      "query": "cmsc 142",
+      "color": {
+        "a": 1,
+        "rgb": 13184052
+      }
+    },
+    {
+      "query": "cmsc 128",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "cmsc 110",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
+    },
+    {
+      "query": "DataEng",
+      "color": {
+        "a": 1,
+        "rgb": 8388863
+      }
+    },
+    {
+      "query": "Literature",
+      "color": {
+        "a": 1,
+        "rgb": 13722880
+      }
+    },
+    {
+      "query": "DeepLearning",
+      "color": {
+        "a": 1,
+        "rgb": 16737894
+      }
+    },
+    {
+      "query": "Data",
+      "color": {
+        "a": 1,
+        "rgb": 14372173
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.626048237476809,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 389,
+  "scale": 0.2540436864142127,
+  "close": true
+}
