@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+
+if [[ $# -eq 2 && -n $2 ]]; then
+    ffmpeg -i $1 -vcodec libx265 -crf 28 "${2}.mp4"
+elif [[ $# -eq 0 || $# -gt 2]]; then
+    echo "Error: invalid number of arguments. Please enter input filename, output filename optional."
+else 
+    ffmpeg -i $1 -vcodec libx265 -crf 28 "${1}_compressed.mp4"

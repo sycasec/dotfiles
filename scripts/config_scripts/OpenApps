@@ -1,0 +1,60 @@
+#!/usr/bin/bash
+#  ╔═╗╔═╗╔═╗╔═╗  ╦  ╔═╗╦ ╦╔╗╔╔═╗╦ ╦╔═╗╦═╗
+#  ╠═╣╠═╝╠═╝╚═╗  ║  ╠═╣║ ║║║║║  ╠═╣║╣ ╠╦╝
+#  ╩ ╩╩  ╩  ╚═╝  ╩═╝╩ ╩╚═╝╝╚╝╚═╝╩ ╩╚═╝╩╚═
+
+case "$1" in
+--menu)
+  rofi-menu
+  ;;
+--terminal)
+  alacritty
+  ;;
+--floating)
+  kitty --class FloaTerm
+  ;;
+--nvim)
+  kitty -e nvim
+  ;;
+--fetch)
+  kitty --hold --class Sysfetch,kitty -e ~/.local/bin/sysfetch
+  ;;
+--ranger)
+  kitty --class FloaTerm -o window.dimensions.lines=44 window.dimensions.columns=120 -e ranger
+  ;;
+
+#Apps
+--calendar)
+  hyprctl dispatch exec kitty -e calcurse setprop class:calendar
+  ;;
+--filemanager)
+  thunar --class thunar
+  ;;
+--music)
+  spotify class p-spotify
+  ;;
+--notes)
+  obsidian
+  ;;
+--browserf)
+  firefox --class firefox
+  ;;
+--browserb)
+  brave --class brave
+  ;;
+--soundcontrol)
+  pavucontrol --class pavucontrol
+  ;;
+--discord)
+  discord --class discord
+  ;;
+--emoji)
+  rofi -show emoji
+  ;;
+--cpick)
+  gcolor3 --class colorpick
+  ;;
+*)
+  echo "invalid option"
+  ;;
+esac

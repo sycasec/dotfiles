@@ -1,37 +1,37 @@
 
 colors:
   primary:
-    background: '#070219'
-    foreground: '#c0caf5'
+    background: '#11121D'
+    foreground: '#A0A8CD'
+
+  cursor:
+    text: '#11121D'
+    cursor: '#A0A8CD'
 
   normal:
-    black:   '#626483'
-    red:     '#fb007a'
-    green:   '#a6e22e'
-    yellow:  '#f3e430'
-    blue:    '#58AFC2'
-    magenta: '#583794'
-    cyan:    '#926BCA'
-    white:   '#d9d9d9'
+    black: '#06080A'
+    red: '#EE6D85'
+    green: '#95C561'
+    yellow: '#D7A65F'
+    blue: '#7199EE'
+    magenta: '#A485DD'
+    cyan: '#38A89D'
+    white: '#4A5057'
 
   bright:
-    black:   '#626483'
-    red:     '#fb007a'
-    green:   '#a6e22e'
-    yellow:  '#f3e430'
-    blue:    '#58AFC2'
-    magenta: '#472575'
-    cyan:    '#926BCA'
-    white:   '#f1f1f1'
+    black: '#282C34'
+    red: '#FE6D85'
+    green: '#98C379'
+    yellow: '#D7A65F'
+    blue: '#9FBBF3'
+    magenta: '#A485DD'
+    cyan: '#38A89D'
+    white: '#A0A8CD'
   
   vi_mode_cursor:
     text: "0xe0def4"
     cursor: "0x524f67"
   
-  cursor:
-    cursor: '#fb007a'
-    text:	'#070219'
-
   hints:
     start:
       foreground: "#908caa"

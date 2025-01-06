@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+feh -z --no-fehbg --bg-fill $WALLPAPER_DIR

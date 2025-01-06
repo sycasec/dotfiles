@@ -88,7 +88,6 @@ window#waybar.hidden {
   margin-right: 8px;
   padding: 5px 15px;
   background-color: #16161d;
-  color: #181825;
 }
 
 #network {
@@ -137,7 +136,6 @@ window#waybar.hidden {
 #battery.critical,
 #battery.urgent {
   color: #ff0048;
-  color: #181825;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;

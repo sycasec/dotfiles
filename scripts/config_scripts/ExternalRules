@@ -1,0 +1,64 @@
+#!/usr/bin/bash
+
+# External rules that define window / node setup in bspwm
+# for example, opening firefox will set the current desktop to 2 due to follow=on
+# and will always open in desktop 2
+
+
+wid=$1
+class=$2
+instance=$3
+consequences=$4
+
+case "$class" in 
+  FloaTerm)
+    eval "$consequences"
+    [ "$state" ] || echo "state=floating center=on"
+    ;;
+  calterm)
+    eval "$consequences"
+    [ "$state" ] || ehco "state=pseudo_tiled desktop=^4 reectangle=966x576+0+0 follow=on center=on"
+    ;;
+  dolphin)
+    eval "$consequences"
+    ["$state"] || echo "state=pseudo_tiled desktop=^3 rectangle=966x576+0+0 follow=on"
+    ;;
+  thunar)
+    eval "$consequences"
+    ["$state"] || echo "state=pseudo_tiled desktop=^3 rectangle=966x576+0+0 follow=on"
+    ;;
+  firefox|brave)
+    eval "$consequences"
+    [ "$state" ] || echo "desktop=^2 follow=on"
+    ;;
+  p-spotify)
+    eval "$consequences"
+    [ "$state" ] || echo "state=pseudo_tiled desktop=^5 follow=on"
+    ;;
+  viewnior)
+    eval "$consequences"
+    [ "$state" ] || echo "state=floating focus=on center=on"
+    ;;
+  pavucontrol)
+    eval "$consequences"
+    [ "$state" ] || echo "state=tiled desktop=^4 focus=on center=on"
+    ;;
+  discord)
+    eval "$consequences"
+    [ "$state" ] || echo "desktop=^7 focus=on center=on"
+    ;;
+  colorpick)
+    eval "$consequences"
+    [ "$state" ] || echo "state=floating focus=on center=on"
+    ;;
+
+esac
+ 
+# i have no idea what this does
+
+case "$instance" in 
+  Toolkit)
+    eval "$consequences"
+    [ "$state" ] || echo "state=floating sticky=on rectangle=500x290+1054+593" 
+    ;;
+esac

@@ -1,0 +1,62 @@
+
+[font]
+size = 10.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "BoldItalic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 5
+y = 5
+
+[general]
+import = ["./themes/themes/tokyo_night.toml"]
+
+# good color themes
+# aura
+# cyber_punk_neon
+# dracula
+# gotham
+# hardhacker
+# iris
+# monokai_charcoal
+# moonlight_ii_vscode
+# omni
+# spacegray
+# synthwave_84 BEST SO FAR
+#
+
+# good base themes
+# blood_moon
+# challenger_deep
+# chicago95 (sundried alt)
+# enfocado_dark (sundried alt)
+# papercolor_dark (sundried alt)
+# citylights
+# doom_one
+# github_dark_dimmed
+# iterm
+
+# [env]
+# FCITX_NO_PRELOAD = 1

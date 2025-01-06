@@ -19,7 +19,7 @@ sleep 2
 /usr/lib/xdg-desktop-portal &
 
 #  ╒══════════════════════════════════════════════════════════╕
-#  │                           XDPH                           │
+
 #  ╘══════════════════════════════════════════════════════════╛
 # https://wiki.hyprland.org/FAQ/#some-of-my-apps-take-a-really-long-time-to-open
 # https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580
@@ -68,5 +68,3 @@ killall swww_randomize.sh
 #  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 # (https://github.com/ErikReider/SwayOSD)
 # https://aur.archlinux.org/packages/swayosd-git
-
-exec swayosd-server &

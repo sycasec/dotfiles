@@ -1,0 +1,41 @@
+#!/usr/bin/bash
+
+CURR_LOC=$(pwd)
+
+SAVE_DIR_EL="/home/sycasec/.local/share/Steam/steamapps/compatdata/1245620/pfx/drive_c/users/steamuser/AppData/Roaming/EldenRing/76561198119515987/"
+
+SAVE_FILE_MAIN="${SAVE_DIR_EL}ER0000.sl2"
+
+function backup() {
+	cp -v "$SAVE_FILE_MAIN" "$1"
+}
+
+function replace_main() {
+	echo "Choose from the following:"
+	lsd -lh
+	if [[ -f "$2" ]]; then
+		local filename=$2
+	else
+		read -r filename
+	fi
+
+	if [[ -f "$filename" ]]; then
+		curr_timestamp=$(date +"%Y-%m-%d_%H:%M:%S")
+		cp -v "$SAVE_FILE_MAIN" "ER0000_${curr_timestamp}.bak"
+		cp -v "$filename" "ER0000.sl2"
+	else
+		echo "File '$filename' does not exist"
+	fi
+}
+
+cd $SAVE_DIR_EL || exit
+if [[ $1 == "backup" ]]; then
+	if [[ -n "$2" ]]; then
+		backup "$2"
+	fi
+elif [[ $1 == "replace" ]]; then
+	replace_main "$2"
+else
+	echo "No arg1 supplied! choose between backup and replace"
+fi
+cd $CURR_LOC || exit

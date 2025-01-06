@@ -3,11 +3,16 @@ return {
   { "catppuccin/nvim" },
   { "rose-pine/neovim" },
   { "maxmx03/fluoromachine.nvim" },
+  { "lunarvim/synthwave84.nvim" },
+  { "folke/tokyonight.nvim" },
+  { "samharju/synthweave.nvim" },
+  { "Yazeed1s/oh-lucy.nvim" },
+  { "tiagovla/tokyodark.nvim" },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "tokyodark",
     },
   },
 

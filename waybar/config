@@ -86,7 +86,7 @@
         "tooltip-format": "<tt>{calendar}</tt>",
         // "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%A %d %b %Y, %I:%M %p}",
-        "on-click": "OpenApps --calendar"
+        "on-click": "alacritty --class float-term -e calcurse & sleep 0.1 && hyprctl keyword windowrule float,class:float-term",
     },
     "network": {
         // "max-length" :50,
